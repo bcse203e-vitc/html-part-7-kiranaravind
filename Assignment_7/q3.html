@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("1.Addition\n 2.Subtraction\n 3.Multiplication\n 4.Divison\n 5.Exponentiation\n 6.Modulus\n");
+        let c=parseInt(prompt("Enter the option"));
+        let a=parseInt(prompt("Enter the number"));
+        let b=parseInt(prompt("Enter the number"));
+        document.write("First number"+a+"<br>");
+        document.write("Second number"+b+"<br>");
+        if(c==1){
+            let res=a+b;
+            document.write("Sum:"+res);
+        }
+        else if(c==2)
+        {
+            if(a>b){
+                let res=a-b;
+                document.write("Difference:"+res);
+            }
+            else if(a<b){
+                let res=b-a;
+                document.write("Difference:"+res);
+            }
+        }
+        else if(c==3){
+            let res=a*b;
+            document.write("Product:"+res);
+        }
+        else if(c==4){
+            let res=a/b;
+            document.write("Quotient:"+res);
+        }
+        else if(c==5){
+            let res=a**b;
+            document.write("Exponential:"+res);
+        }
+        else if(c==6){
+            let res=a%b;
+            document.write("Remainder:"+res);
+        }
+    </script>
+</body>
+</html>
